@@ -1,0 +1,59 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "r01a"
+        },
+        "virtualMachineName": {
+            "value": "appsvc-fs"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "adminUsername": {
+            "value": "appsvcadmin"
+        },
+        "virtualNetworkName": {
+            "value": "RG1-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "appsvc-fs138"
+        },
+        "networkSecurityGroupName": {
+            "value": "appsvc-fs-nsg"
+        },
+        "adminPassword": {
+            "value": "P@ssw0rd1P@ssw0rd1"      },
+        "storageAccountName": {
+            "value": "rg1disks225"
+        },
+        "storageAccountType": {
+            "value": "Premium_LRS"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "rg1diag483"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/rg1diag483"
+        },
+        "addressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "appsvc-fs-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        }
+    }
+}
